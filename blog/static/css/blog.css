@@ -8,14 +8,14 @@ body {
 }
 
 .page-header {
-  background-color: #c25100;
+  background-color: #C25100;
   margin-top: 0;
   padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-  color: #fff;
-  font-size: 36px;
+  color: #ffffff;
+  font-size: 36pt;
   text-decoration: none;
 }
 
@@ -39,10 +39,10 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
-.post-menu, .top-menu:hover, .top-menu:visited {
-  color: #fff;
+.top-menu, .top-menu:hover, .top-menu:visited {
+  color: #ffffff;
   float: right;
-  font-size: 26px;
+  font-size: 26pt;
   margin-right: 20px;
 }
 
@@ -51,5 +51,9 @@ h1, h2, h3, h4 {
 }
 
 .post h2 a, .post h2 a:visited {
-  color: #000;
+  color: #000000;
+}
+
+.username {
+  padding-left: 15px;
 }
