@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Django girls blog</title>
-</head>
-<body>
-  <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-  </div>
-  <div>
-    {% for post in posts %}
-    <div>
-      <h2><a href="">{{post.title}}</a></h2>
-      <p>{{post.text|linebreaksbr}}</p>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  {% for post in posts %}
+  <div class="post">
+    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
+    <p>{{post.text|linebreaksbr}}</p>
+    <div class="date">
       <p>公開日：{{post.published_date}}</p>
     </div>
-    {% endfor %}
   </div>
-</body>
-</html>
+  {% endfor %}
+{% endblock %}
