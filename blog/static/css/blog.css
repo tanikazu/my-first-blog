@@ -57,3 +57,7 @@ h1, h2, h3, h4 {
 .username {
   padding-left: 15px;
 }
+
+.comment {
+  margin: 20px 0px 20px 20px;
+}
